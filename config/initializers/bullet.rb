@@ -5,6 +5,7 @@ Rails.application.configure do
     if defined? Bullet
       Bullet.enable = true
       Bullet.bullet_logger = true
+      Bullet.unused_eager_loading_enable = false
 
       if Rails.env.development?
         Bullet.alert = true
