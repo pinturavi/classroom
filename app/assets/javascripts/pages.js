@@ -8,6 +8,7 @@
   ready = function() {
     var tag = document.createElement('script');
     tag.src = "https://www.youtube.com/iframe_api";
+    let length = $('script').length;
     var lastScriptTag = $('script')[$('script').length - 1];
     $(tag).insertAfter(lastScriptTag);
   }
